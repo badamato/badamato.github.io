@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechGear Store - Premium Electronics</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f5f5f5;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        background: white;
+        padding: 25px 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        color: #2c3e50;
+        font-size: 2em;
+        margin-bottom: 8px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .header p {
+        color: #7f8c8d;
+        font-size: 1.2em;
+      }
+
+      .phone-section {
+        background: white;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        border-left: 5px solid #3498db;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .phone-section:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .phone-section h3 {
+        color: #2c3e50;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+
+      .phone-number {
+        background: #ecf0f1;
+        padding: 8px 15px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+        color: #2c3e50;
+        margin: 6px 0;
+        border: 2px solid #bdc3c7;
+        transition: all 0.3s ease;
+      }
+
+      .phone-number:hover {
+        background: #d5dbdb;
+        border-color: #3498db;
+      }
+
+      .swap-target,
+      .swapping-tracker {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .section-label {
+        font-weight: bold;
+        color: #000000;
+        margin-right: 10px;
+      }
+
+      .swap-label {
+        font-weight: bold;
+        color: #e74c3c;
+        margin-right: 10px;
+      }
+
+      .tracker-label {
+        font-weight: bold;
+        color: #27ae60;
+        margin-right: 10px;
+      }
+
+      .contact-section {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .contact-section h2 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-size: 1.8em;
+      }
+
+      .contact-section p {
+        color: #7f8c8d;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+      }
+
+      .cta-button {
+        background: linear-gradient(45deg, #3498db, #2980b9);
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+        color: white;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .phone-section {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🛍️ TechGear Store</h1>
+        <p>Premium Electronics & Gadgets - Your One-Stop Tech Destination</p>
+      </div>
+
+      <div class="phone-section">
+        <h3>✨ <span class="section-label">Store Location 001</span></h3>
+        <div class="phone-number">
+          <span class="swap-label">Swap Target:</span>
+          <span class="swap-target">678-818-0001</span><br />
+          <span class="tracker-label">This is the Swapping Tracker:</span>
+          <span class="swapping-tracker">678-818-0001</span>
+        </div>
+      </div>
+
+      <div class="phone-section">
+        <h3>✨ <span class="section-label">Store Location 002</span></h3>
+        <div class="phone-number">
+          <span class="swap-label">Swap Target:</span>
+          <span class="swap-target">678-818-0002</span><br />
+          <span class="tracker-label">This is the Swapping Tracker:</span>
+          <span class="swapping-tracker">678-818-0002</span>
+        </div>
+      </div>
+
+      <div class="phone-section">
+        <h3>✨ <span class="section-label">Store Location 003</span></h3>
+        <div class="phone-number">
+          <span class="swap-label">Swap Target:</span>
+          <span class="swap-target">678-818-0003</span><br />
+          <span class="tracker-label">This is the Swapping Tracker:</span>
+          <span class="swapping-tracker">678-818-0003</span>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <h2>💬 Ready to Get Started?</h2>
+        <p>
+          Contact us today to learn more about our premium electronics and
+          gadgets!
+        </p>
+        <a href="#" class="cta-button">Get In Touch</a>
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2024 TechGear Store. All rights reserved.</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="//js.staging-callrail.com/companies/860225296/1481c5b35da7b2763019/12/swap.js"></script> 
+  </body>
+</html>
